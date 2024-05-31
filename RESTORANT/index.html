@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    
+    <style>
+        button{
+        width: 200px;
+        padding:15px 0;
+        text-align: center;
+        margin:px px;
+        border-radius:25px;
+        font-weight:bold;
+        border:2px solid #000000;
+        background: transparent;
+        color: #000000;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        span {
+    background: #009688;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            
+        }
+        .container {
+            max-width: 510px;
+            margin:  px;
+            padding: 60px;
+            background-color: rgba(248, 248, 248, 0.884); 
+        }
+        .menu-item {
+            border-bottom: 1px solid #ff0000;
+            padding: 40px 0;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #333;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .price {
+            color: #777;
+            margin-top: 5px;
+            float: right;
+        }
+        body {
+          background-image: url('Menu.png');
+            background-repeat: no-repeat;
+            background-size:1850px;
+            background-position: 630px 0px;
+        }
+        </style>
+        
+    </style>
+    
+</head>
+<body>
+    
+     
+    <div class="container">
+        <a href="#" onclick="goBack()">
+            <button class="fas fa-arrow-left">Back</button> </i>
+          </a>
+          
+          <script>
+            function goBack() {
+              window.history.back();
+            }
+          </script>
+        <h1>HARMONY RESTAURANT MENU</h1>
+        
+        <div class="menu-item">
+            <h2>Breakfast</h2>
+            <ul>
+                <li>Eggs Benedict <span class="price">P120</span></li>
+                <li>Pancakes <span class="price">P50</span></li>
+                <li>Avocado Toast <span class="price">P39</span></li>
+            </ul>
+        </div>
+        <div class="menu-item">
+            <h2>Lunch</h2>
+            <ul>
+                <li>Caesar Salad <span class="price">P300</span></li>
+                <li>Grilled Chicken Sandwich <span class="price">P250</span></li>
+                <li>Vegetarian Wrap <span class="price">P150</span></li>
+            </ul>
+        </div>
+        <div class="menu-item">
+            <h2>Dinner</h2>
+            <ul>
+                <li>Steak with Roasted Potatoes <span class="price">P360</span></li>
+                <li>Salmon with Asparagus <span class="price">P200</span></li>
+                <li>Pasta Primavera <span class="price">P239</span></li>
+            </ul>
+            
+            <div class="menu-item"></div>
+            <a> CALL at +639090424334 to order</a>
+            <button type="button"><span></span><a href="tel:+639090424334" style='color:rgb(0, 0, 0)'>CALL NOW! </a></button>
+            
+        </div>
+    </div>
+    
+        
+</body>
+</html>
